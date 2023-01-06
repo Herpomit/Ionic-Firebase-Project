@@ -1,0 +1,25 @@
+<ion-grid class="container mt-5">
+  <ion-row class="row">
+    <ion-col>
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h4>Üye Giriş Ekranı</h4>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label>E-Posta</label>
+            <input type="text" class="form-control" #mail>
+          </div>
+          <div class="form-group">
+            <label>Parola</label>
+            <input type="password" class="form-control" #parola>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-outline-primary" (click)="OturumAc(mail.value,parola.value)">Giriş</button>
+        </div>
+      </div>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
